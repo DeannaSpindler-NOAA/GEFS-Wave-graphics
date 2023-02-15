@@ -1,0 +1,7 @@
+#!/bin/bash -l
+
+NEWHOME=/path/to/crons
+
+## Create the GEFS-Wave graphics and copy them to emcrzdm
+ 00 22 * * * ${NEWHOME}/Cron/ww3_tasks.sh 1>${NEWHOME}/Logs/ww3_tasks.log 2>&1
+
